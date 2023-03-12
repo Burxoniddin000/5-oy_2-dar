@@ -3,12 +3,11 @@ import { getUserTime } from './data'
 import React, { useState } from 'react';
 function App() {
   let [array, starray] = useState([
-    { id: 1, name: "kitob oqish", date: getUserTime(Date.now()) },
-    { id: 2, name: "yugursih", date: getUserTime(Date.now()) },
+    
   ])
 
-  const [name, setTitle] = useState("");
-  const [date, setDate] = useState("");
+  const [name, seTitle] = useState("");
+  const [date, seDate] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,7 +24,7 @@ function App() {
     };
 
     starray([...array, newData]);
-    setTitle("");
+    seTitle("");
 
     alert(`${name} muvaffaqiyatli qoʻshildi`);
   };
@@ -41,14 +40,14 @@ function App() {
             id="form"
           >
             <input className='header__input' type="text"
-              onChange={(e) => setTitle(e.target.value)} />
+              onChange={(evt) => seTitle(evt.target.value)} />
+            <input className='input__data' type="datetime-local"
+              onChange={(evt) => seDate(getUserTime(evt.target.value))} />
             <button className='btn'>submit</button>
-            <input type="datetime-local"
-              onChange={(e) => setDate(getUserTime(e.target.value))} />
           </form>
           <ul className='header__inner'>
             {array.map((arr) => (
-              <li key={arr.id} className='header__item'>
+              <li data-id={arr.id} key={arr.id} className='header__item'>
                 <div>
                   <h2>{arr.name}</h2>
                   <p>{arr.date}</p>

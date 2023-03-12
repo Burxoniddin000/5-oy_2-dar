@@ -5,14 +5,19 @@
   padding-right: 20px;
 }
 
-ul,p,li{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+ul,
+p,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-h1,h2,h3,h4{
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -33,44 +38,65 @@ h1,h2,h3,h4{
   outline: none;
   border: none;
   font-size: 20px;
-  padding-left: 10px;
+  padding-left: 5px;
   background-color: blue;
   color: #fff;
   box-shadow: 0 0 10px 2px rgb(54, 52, 52);
 }
 
-
-.header__item{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width :900px; 
-    margin: 0 auto;
-    background-color: rgb(79, 78, 78);
-    border-radius: 8px; 
-    color: #fff;
-    padding: 2px 10px ;
-    margin-bottom: 10px;
+.header__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgb(79, 78, 78);
+  border-radius: 8px;
+  color: #fff;
+  padding: 2px 10px;
+  margin-bottom: 10px;
 }
 
-.header__inner{
- padding-bottom: 20px;
+.header__inner {
+  padding-bottom: 20px;
 }
 
-.header__edit{
-    height: 30px;
-    border: none;
-    background-color: blue;
-    color: #fff;
-    border-radius: 7px;
-    width: 70px;
-    margin-right: 10px;
+.header__edit {
+  height: 30px;
+  border: none;
+  background-color: blue;
+  color: #fff;
+  border-radius: 7px;
+  width: 70px;
+  margin-right: 10px;
 }
-.header__delit{
-    height: 30px;
-    border: none;
-    background-color:red;
-    color: #fff;
-    border-radius: 7px;
-    width: 70px;
+.header__delit {
+  height: 30px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  border-radius: 7px;
+  width: 70px;
+}
+
+.btn {
+  width: 100%;
+  background-color: blue;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.input__data {
+  height: 35px;
+  border: 2px solid black ;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  font-size: 25px;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
